@@ -6,15 +6,6 @@
   z-index: 1;
   opacity: .8;
 }
-.banner{
-  width: 100vw;
-  height: 100vh;
-  background-position: center;
-  background-repeat: no-repeat;
-  object-fit: fill;
-  background-size: cover;
-  position: relative;
-}
 .banner-container{
   position: fixed;
   width: 100%;
@@ -27,6 +18,17 @@
   margin: auto;
   color: #fff;
 }
+
+video{
+  width: 100vw !important;
+  height: 100vh !important;
+}
+
+img{
+  width: 100vw !important;
+  height: 100vh !important;
+}
+
 
 @media screen and (max-width: 1000px){
   .banner-content{

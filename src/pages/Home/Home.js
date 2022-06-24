@@ -2,11 +2,12 @@ import React from 'react';
 // import bannerImg from "../../public/images/party1.jpg";
 import bannerVid from "../../public/images/partyVid.mp4";
 import { ImTwitter} from "react-icons/im";
-import { FiMenu } from "react-icons/fi";
+// import { FiMenu } from "react-icons/fi";
 import { IoLogoWhatsapp } from "react-icons/io";
 import { AiFillInstagram } from "react-icons/ai";
 import { SiHackclub } from "react-icons/si";
 import "../../App.css"
+import { Link } from 'react-router-dom';
 
 const Home = () => {
     
@@ -14,15 +15,15 @@ const Home = () => {
       <div>
         <div className='banner-overlay' />
           {/* <img className="banner" src={bannerImg} alt="landing_page_image" />  */}
-          <video width="100%" height="100%" className="banner" loop muted autoPlay>
+          <video width="100%" height="100vh" className="object-cover" loop muted autoPlay>
               <source src={bannerVid} type="video/mp4" />
           </video>
         <div className="banner-container">
               <div className='banner-content'>
                   {/* <div className='fixed top-5 left-8'>logo</div> */}
-                  <div className='fixed top-5 right-8 cursor-pointer'>
+                  {/* <div className='fixed top-5 right-8 cursor-pointer'>
                       <FiMenu className='text-3xl' />
-                  </div>
+                  </div> */}
                 <div>
                     <h1 className="text-2xl md:text-5xl">Welcome To</h1>
                     <h1 className="text-3xl sm:text-5xl lg:text-7xl my-3">Party Rider Club</h1>
@@ -33,8 +34,10 @@ const Home = () => {
                       Members
                   </div>
                   <div className="border rounded-full h-10 md:h-16 flex mt-8">
-                      <input className="w-full bg-transparent px-5 outline-none focus:border-white placeholder:text-white" type="text" placeholder='Enter email address' />
-                      <button className="w-40 border-l text-white rounded-tr-full rounded-br-full md:text-lg text-sm hover:bg-slate-400 bg-red-400 px-4 whitespace-nowrap">Join WaitList</button>
+                      <input disabled className="w-full bg-transparent px-5 text-sm md:text-lg outline-none focus:border-white placeholder:text-white" type="text" placeholder='Email and Phone required.' />
+                      <Link to="/form">
+                           <button className="md:w-40 w-22 border-l text-white rounded-tr-full rounded-br-full h-full  md:text-lg text-sm hover:bg-slate-400 bg-red-400 px-1 md:px-4 whitespace-nowrap">Join WaitList</button>
+                      </Link>
                   </div>
                   <div className='mt-12 mb-6'>Visit Our Social Media</div>
                   <div className='flex justify-center space-x-10'>
