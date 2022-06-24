@@ -36,7 +36,8 @@ const Home = () => {
                       <input className="w-full bg-transparent px-5 outline-none focus:border-white placeholder:text-white" type="text" placeholder='Enter email address' />
                       <button className="w-40 border-l text-white rounded-tr-full rounded-br-full hover:bg-slate-400 bg-red-400 px-4">Join WaitList</button>
                   </div>
-                  <div className='flex justify-center mt-10 space-x-6'>
+                  <div className='mt-12 mb-6'>Visit Our Social Media</div>
+                  <div className='flex justify-center space-x-10'>
                       <a href='https://twitter.com/partyriderapp'>
                           <ImTwitter className='text-3xl cursor-pointer' />
                       </a>
